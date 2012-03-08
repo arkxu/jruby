@@ -636,6 +636,7 @@
       <manifest>
         <attribute name="Built-By" value="${user.name}"/>
         <attribute name="Main-Class" value="${mainclass}"/>
+		<attribute name="Bundle-ClassPath" value="."/>
 		<attribute name="Eclipse-BundleShape" value="dir"/>
       </manifest>
       <rule pattern="org.objectweb.asm.**" result="org.jruby.org.objectweb.asm.@1"/>
