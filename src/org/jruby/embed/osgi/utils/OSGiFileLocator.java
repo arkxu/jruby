@@ -67,10 +67,7 @@ public class OSGiFileLocator {
 		URL url = null;
 		try {
 			url = getFileURL(bundle.getEntry(path));
-			return new File(url.toURI());
-		} catch (NullPointerException ne) {
-			throw new IOException("Unable to find the " + path + " folder in the bundle '" 
-					+ bundle.getSymbolicName() + "'; is the org.jruby.jruby bundle unzipped? ");
+			return new File(url.getFile());
 		} catch (Exception e) {
             IOException exception = new IOException("Unable to find the " + path + 
                     " folder in the bundle '" + bundle.getSymbolicName() + "'");
