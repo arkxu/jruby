@@ -1,5 +1,11 @@
 # JRuby -  A Java implementation of the Ruby language
 
+## Build jruby OSGI with sources
+
+    ant dist-src-osgi-bundle
+
+You will find the complete jar file and source file in dist folder.
+
 Authors: Stefan Matthias Aust, Anders Bengtsson, Geert Bevin,
  Piergiuliano Bossi, Johannes Brodwall, Rocky Burt, Paul Butcher,
  Benoit Cerrina, Wyss Clemens, David Corbin, Thomas E Enebo, Robert Feldt,
